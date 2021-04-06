@@ -1,9 +1,7 @@
 function myFunction() {
   var str = "Cornerstone";
   var n = str.length;
-  document.getElementById("name").innerHTML = 'Numbers of Characters = ' + n;
-
-  
+ 
 }
 
 function go() {
@@ -17,10 +15,10 @@ function go() {
 
   for(var x=0;x<str.length;x++){
       for(var y=0;y<vowel.length;y++){
-          if(str[x]==vowel[y])
-          {
-              ctr++;
-          }
+        if(str[x]==vowel[y])
+        {
+            ctr++;
+        } 
       }
   }
   for(var x=0;x<consonant.length;x++){
@@ -31,6 +29,7 @@ function go() {
           }
       }
   }
-  document.getElementById("p1").innerHTML="The Numbers of Vowels " + ctr;
-  document.getElementById("p2").innerHTML="The Numbers of Consonants " + con;
+  document.getElementById("p0").innerHTML="Numbers of characters \= " + str.length;
+  document.getElementById("p1").innerHTML="Numbers of vowels \= " + ctr;
+  document.getElementById("p2").innerHTML="Numbers of consonants \= " + con;
 }
